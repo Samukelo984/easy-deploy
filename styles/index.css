@@ -1,5 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+:root {
+  --primary-color: #a0ebe9;
+}
+/* UNIVERSAL STYLES */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  color: #000;
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  margin: 0.6rem 0;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0.6rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* END OF UNIVERSAL  */
+
+/* NAVBAR */
+.navbar {
+  height: 4.3rem;
+  background-color: var(--primary-color);
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navlist {
+  display: flex;
+}
+
+.navlist-item {
+  padding: 0.6em;
+  margin: 0 0.3em;
+}
+
+.navlist-item:hover {
+  border-bottom: 0.1rem solid #000;
+}
+
+/* UTILITIES */
+
+.container {
+  padding: 0 2.6em;
+  max-width: 69rem;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.flex {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* END OF NAVBAR  */
+
+/* SHOWCASE */
+
+/* SHOWCASE */
+.showcase {
+  height: 25rem;
+  position: relative;
+  background-color: var(--primary-color);
+}
+
+.showcase .grid {
+  grid-template-columns: 55% 45%;
+  gap: 2rem;
+  overflow: visible;
+}
+
+/* GRID */
+.grid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.1rem;
+  justify-content: center;
+  align-items: center;
+}
+/* END OF GRID */
+
+.text-title {
+  font-size: 2.6rem;
+}
+
+.text-p {
+  margin: 1.1em 0;
+}
+
+/*  BUTTON UTILITIES */
+.btn {
+  padding: 0.6em 2em;
+  display: inline-block;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+/* END OF  BUTTON UTILITIES */
+
+.btn-outline {
+  background: transparent;
+  border: 2rem #fff;
+  /* NOT REACHING.. NEEDS TO BE FIXED */
+}
+
+/* SHOWCASE-FORM CARD */
+/* SHOWCASE-FORM GRID */
+.showcase-form {
+  width: 25rem;
+  height: 21.8rem;
+  padding: 2.6em;
+  position: relative;
+  top: 60px;
+  justify-self: flex-end;
+  z-index: 100;
+}
+/* END OF SHOWCASE FORM  */
+
+/* CARD */
+.card {
+  padding: 1.1em;
+  margin: 0.6em;
+  background-color: #fff;
+  border-radius: 0.6rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+/* END OF CARD */
+
+/* FORM-CONTROL */
+.showcase-form .form-control {
+  margin: 2em 0;
+}
+/* END OF FORM-CONTROL  */
+
+.form-input {
+  width: 100%;
+  padding: 0.2em;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid #b4becb;
+}
+
+.showcase::before,
+.showcase::after {
+  content: "";
+  height: 6.2rem;
+  position: absolute;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  transform: skewY(-2deg);
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+}
+
+/* END OF SHOWCASE-FORM CARD */
+/* END OF SHOWCASE  */
+
+/* CONTAINER GRID */
+/* END OF CONTAINER GRID  */
