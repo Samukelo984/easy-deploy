@@ -1,0 +1,26 @@
+.features-head img {
+  width: 12.5rem;
+  justify-self: flex-end;
+}
+
+.features-sub-head img {
+  width: 18.7rem;
+  justify-self: flex-end;
+}
+
+.features-main .grid {
+  padding: 2em;
+}
+
+.features-main .grid > *:first-child {
+  grid-column: 1 / span 3;
+}
+
+.features-main .grid > *:nth-child(2) {
+  grid-column: 1 / span 2;
+}
+
+.featicon {
+  margin-right: 1.1em;
+  font-size: 2rem;
+}
