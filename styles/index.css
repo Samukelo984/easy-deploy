@@ -267,5 +267,38 @@ img {
 }
 /* END OF LANGUAGES  */
 
-/* CLOUD */
-/* END OF CLOUD  */
+/* FOOTER */
+.footer {
+  padding-bottom: 2em;
+}
+.footer-nav > ul > li > a {
+  color: #000;
+}
+
+.social-icon {
+  margin-right: 0.4em;
+  font-size: 2rem;
+  color: #000;
+}
+/* END OF FOOTER  */
+
+/* RESPONSIVENESS */
+/* TABLETS & BELOW */
+@media screen and (max-width: 768px) {
+  /* STYLE-SELF */
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+  /* RESTYLE NAVBAR SELF */
+  .navbar {
+    height: 6.8rem;
+  }
+  .navbar .flex {
+    flex-direction: column;
+  }
+  .navlist {
+    padding: 0.6em;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
